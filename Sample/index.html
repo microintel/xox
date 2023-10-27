@@ -68,23 +68,27 @@ let x= document.getElementById('p');
 x.innerHTML="";
 
 if (a1==b1 && a1==c1){
-x.innerHTML="WIN" + "_"+a1+"_row1";
 document.getElementById('t1').style.backgroundColor="red";
 document.getElementById('t2').style.backgroundColor="red";
 document.getElementById('t3').style.backgroundColor="red";
+alert(a1+" WON");
+setTimeout(reload(), 9999999000);
+
 }
 if(d1==e1 && e1==f1){
-x.innerHTML="WIN" + "_"+d1+"_row2";
 document.getElementById('t4').style.backgroundColor="red";
 document.getElementById('t5').style.backgroundColor="red";
 document.getElementById('t6').style.backgroundColor="red";
+alert(d1+" WON");
+setTimeout(reload(), 9999999000);
 }
 
 if(g1==h1 && h1==i1){
-x.innerHTML="WIN" + "_"+g1+"_row3";
 document.getElementById('t7').style.backgroundColor="red";
 document.getElementById('t8').style.backgroundColor="red";
 document.getElementById('t9').style.backgroundColor="red";
+alert(g1+" WON");
+setTimeout(reload(), 9999999000);
 }
 
 if(a1==d1 && d1==g1){
@@ -92,6 +96,8 @@ x.innerHTML="WIN" + "_"+a1+"_clum1";
 document.getElementById('t1').style.backgroundColor="red";
 document.getElementById('t4').style.backgroundColor="red";
 document.getElementById('t7').style.backgroundColor="red";
+alert(a1+" WON");
+setTimeout(reload(), 9999999000);
 }
 
 if(b1==e1 && e1==h1){
@@ -99,6 +105,8 @@ x.innerHTML="WIN" + "_"+b1+"_clum2";
 document.getElementById('t2').style.backgroundColor="red";
 document.getElementById('t5').style.backgroundColor="red";
 document.getElementById('t8').style.backgroundColor="red";
+alert(b1+" WON");
+setTimeout(reload(), 9999999000);
 }
 
 if(c1==f1 && f1==i1){
@@ -106,6 +114,8 @@ x.innerHTML="WIN" + "_"+c1+"_clum3";
 document.getElementById('t3').style.backgroundColor="red";
 document.getElementById('t6').style.backgroundColor="red";
 document.getElementById('t9').style.backgroundColor="red";
+alert(c1+" WON");
+setTimeout(reload(), 9999999000);
 }
 
 if(a1==e1 && e1==i1){
@@ -113,6 +123,8 @@ x.innerHTML="WIN" + "_"+a1+"_diagnal1";
 document.getElementById('t1').style.backgroundColor="red";
 document.getElementById('t5').style.backgroundColor="red";
 document.getElementById('t9').style.backgroundColor="red";
+alert(a1+" WON");
+setTimeout(reload(), 9999999000);
 }
 
 
@@ -121,11 +133,18 @@ x.innerHTML="WIN" + "_"+c1+"_diagnal2";
 document.getElementById('t3').style.backgroundColor="red";
 document.getElementById('t5').style.backgroundColor="red";
 document.getElementById('t7').style.backgroundColor="red";
+alert(c1+" WON");
+setTimeout(reload(), 9999999000);
 }
 
 
 }
 
+
+function reload(){
+location.reload();
+
+}
 </script>
 </body>
 </html>
